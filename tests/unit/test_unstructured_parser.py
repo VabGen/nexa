@@ -1,5 +1,7 @@
 from pathlib import Path
+
 from nexa.adapters.parsers.unstructured_parser import UnstructuredDocumentParser
+
 
 def test_parse_pdf():
     parser = UnstructuredDocumentParser()
