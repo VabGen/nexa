@@ -70,6 +70,7 @@ profile = "black"
 [tool.mypy]
 python_version = "3.13"
 strict = true
+#mypy_path = ["src"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
