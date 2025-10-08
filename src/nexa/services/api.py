@@ -33,7 +33,9 @@ def create_app() -> FastAPI:
         }
 
     @app.post("/refine")
-    async def refine_text(raw_text: str = Body(..., embed=True)) -> Dict[str, Any]:
+    async def refine_text(
+        raw_text: str = Body(..., media_type="text/plain")
+    ) -> Dict[str, Any]:
         refined = text_refiner.execute(raw_text)
         return {"refined_text": refined}
 
