@@ -1,8 +1,10 @@
 import io
 from pathlib import Path
 from typing import Any
+
 from unstructured.partition.auto import partition
-from nexa.interfaces.document_parser import DocumentParser, ParsedDocument
+
+from ...interfaces.document_parser import DocumentParser, ParsedDocument
 
 
 class UnstructuredDocumentParser(DocumentParser):
